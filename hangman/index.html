@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Evan's Fabulous Hangman </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+ <body onload="addButtons()">
+
+<h1>HANGMAN</h1>
+
+<!-- select box for difficulty? -->
+<select id="difficulty">  
+  <option value="1">Easy</option>
+  <option value="2">Medium</option>
+  <option value="3">Hard</option>
+</select>
+<button id="start">Start New Game</button>
+
+<div id="buttonContainer"></div>
+
+<div id="output"></div>
+<div id="output2"></div>  
+
+
+<button id="guessLetter">Guess Letter</button>
+
+<h3>Guessed Letters</h3>
+
+<div id="guessedLetters"></div>
+
+<h4>Guesses Remaining...</h4>
+<div id="numGuesses"></div>
+<img id="fart" >
+
+<div id="word"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
