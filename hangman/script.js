@@ -34,7 +34,7 @@ word = words[Math.floor(Math.random() * words.length)];
 */
     enableButtons();
     document.getElementById("guessedLetters").innerHTML = guessedLetters;
-
+    document.getElementById("fart").src = "images/" + guesses + ".png";
 }
 
 //at start and every time the user enters a guess
@@ -72,6 +72,7 @@ function winSkeels(){
 
 function berkelium(){
     document.getElementById("output2").innerHTML = "you lost, try again sometime :/ the word was " + word;
+    document.getElementById("fart").src = "10.png";
 
 }
 //every time the user enters a guess
@@ -80,6 +81,7 @@ function guessLetter(letter) {
     guessedLetters.push(letter);
     printWord();
     guesses = guesses-1;
+    document.getElementById("numGuesses").innerHTML = guesses;
     document.getElementById("guessedLetters").innerHTML = guessedLetters;
     document.getElementById("fart").src = "images/" + guesses + ".png";
     /*
